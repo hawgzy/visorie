@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visorie</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: system-ui, sans-serif;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 7rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #4b5563; /* gray-700 */
+      margin-top: 0.75rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 42rem; /* ~2xl */
+      padding: 1.5rem 1rem;
+      font-size: 0.875rem; /* text-sm */
+      color: #6b7280; /* gray-500 */
+      margin-top: 4rem;
+    }
+
+    footer a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: inherit;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>visorie</h1>
+    <p>Coming soon</p>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Visorie</div>
+    <div class="links">
+      <a href="#">Privacy</a>
+      <a href="mailto:matt@visorie.com">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
